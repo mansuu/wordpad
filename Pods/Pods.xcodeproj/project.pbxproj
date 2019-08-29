@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BD5924283EE0D62B9FCC8F0CFA28552 /* Pods-WordPadTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 853F85BAFCF1E1C1BE217243A52333DF /* Pods-WordPadTests-dummy.m */; };
+		7849392B5E9D652D533B24F6AEDBF37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7EEF036E6A0F0A8063E3CCB2C53B2E50 /* Pods-WordPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5E86A64BE9CC9BF1C061A8653A48C /* Pods-WordPad-dummy.m */; };
+		86AA6803E5CBF84F21D98B7BEBE31588 /* Pods-WordPadUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 997264226283A13A8CE3C4B7FFAD842B /* Pods-WordPadUITests-dummy.m */; };
+		8C1479DA6D7EEB8D39F64F1D3CA2CDA1 /* Pods-WordPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5BF91DCDC8B066D4FDB565015FC02E7 /* Pods-WordPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFCBEF90AC3AB553A31235C2464F7636 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C284D4A99F791AAAF30858F410FB5B29 /* Pods-WordPadTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9D1BF45AA60182D0D91C943525678B /* Pods-WordPadTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE30EB3C2BD7363408CB519923251D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F0E3F346451533E5A1C1F9C65C089016 /* Pods-WordPadUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B7F39399B54518E1A49219CB99D68C /* Pods-WordPadUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA16ED58E7B41F10E7D50A647FF03C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C8E9D5B62A9405EC7CAD1D83BECB246;
+			remoteInfo = "Pods-WordPad";
+		};
+		D27FF365BBAEEE0FD1063D57ABEA0A1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C8E9D5B62A9405EC7CAD1D83BECB246;
+			remoteInfo = "Pods-WordPad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09AE9D37DEDC589832203F548465B976 /* Pods-WordPadTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordPadTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2162C93BFC5963F256BEF84E97AC1A1B /* Pods_WordPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WordPad.framework; path = "Pods-WordPad.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CA4066D4CB7B912B679A0327FFFB39 /* Pods-WordPadUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordPadUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		315F6966D9BB0620413976E96AAC6E10 /* Pods_WordPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WordPadTests.framework; path = "Pods-WordPadTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		332BAC7F7101F5CC6A4B3CA248C30C6D /* Pods-WordPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordPad.release.xcconfig"; sourceTree = "<group>"; };
+		3DCCC7003C0CB24BA457725779B28979 /* Pods-WordPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordPadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3EEE39224B4ACCBD6FB28502206D3676 /* Pods-WordPadUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordPadUITests.modulemap"; sourceTree = "<group>"; };
+		4CF5BB0744AAA2C259778C492DFE7FA3 /* Pods-WordPad-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordPad-acknowledgements.plist"; sourceTree = "<group>"; };
+		52A8CC308E6B5CA7E621712AA74032A4 /* Pods-WordPadUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordPadUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54A7BE1497F4FBF1368809CA0B7D9931 /* Pods-WordPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5E9D1BF45AA60182D0D91C943525678B /* Pods-WordPadTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordPadTests-umbrella.h"; sourceTree = "<group>"; };
+		647B6B4EF3672F0FFCA4747FDE212A3E /* Pods-WordPadTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordPadTests.modulemap"; sourceTree = "<group>"; };
+		668832457DEC712B220BAE453603A12D /* Pods-WordPadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordPadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69D406269C42CBCED7D11D34E044494E /* Pods-WordPadTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordPadTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7590EB637172B8B9BA8CFAE5443B0B88 /* Pods_WordPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WordPadUITests.framework; path = "Pods-WordPadUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		853F85BAFCF1E1C1BE217243A52333DF /* Pods-WordPadTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordPadTests-dummy.m"; sourceTree = "<group>"; };
+		855930A7916DF6BBB35550B1FEA0BC38 /* Pods-WordPadTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordPadTests-Info.plist"; sourceTree = "<group>"; };
+		917682A847AAC4DB0620FE8AC406D4DD /* Pods-WordPadUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordPadUITests-Info.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		997264226283A13A8CE3C4B7FFAD842B /* Pods-WordPadUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordPadUITests-dummy.m"; sourceTree = "<group>"; };
+		A0BD5398BE2E56C50409FE14D8B49270 /* Pods-WordPad-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordPad-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A72F367D1E3423FE91425229A31FFCC0 /* Pods-WordPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordPadTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3C8F6F6A200D910A802134387FA3530 /* Pods-WordPad-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordPad-Info.plist"; sourceTree = "<group>"; };
+		C8B5E86A64BE9CC9BF1C061A8653A48C /* Pods-WordPad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordPad-dummy.m"; sourceTree = "<group>"; };
+		DCB96A9AD2657EECDBFB11BCEE6323F2 /* Pods-WordPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordPad.debug.xcconfig"; sourceTree = "<group>"; };
+		DF5335F304FF2B01E76F5C001B8FFDFF /* Pods-WordPad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordPad.modulemap"; sourceTree = "<group>"; };
+		E5BF91DCDC8B066D4FDB565015FC02E7 /* Pods-WordPad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordPad-umbrella.h"; sourceTree = "<group>"; };
+		F5B7F39399B54518E1A49219CB99D68C /* Pods-WordPadUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordPadUITests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EDD4C40A8502E99D653F79F38B63A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCBEF90AC3AB553A31235C2464F7636 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1B5E20776A5817BFCC1D8ECBAAD783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7849392B5E9D652D533B24F6AEDBF37C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F641CF89AFEB07C8DC3720AD740B9BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE30EB3C2BD7363408CB519923251D18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30EBB9C11DC549AB3A766536E9D4BF09 /* Pods-WordPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				647B6B4EF3672F0FFCA4747FDE212A3E /* Pods-WordPadTests.modulemap */,
+				09AE9D37DEDC589832203F548465B976 /* Pods-WordPadTests-acknowledgements.markdown */,
+				69D406269C42CBCED7D11D34E044494E /* Pods-WordPadTests-acknowledgements.plist */,
+				853F85BAFCF1E1C1BE217243A52333DF /* Pods-WordPadTests-dummy.m */,
+				855930A7916DF6BBB35550B1FEA0BC38 /* Pods-WordPadTests-Info.plist */,
+				5E9D1BF45AA60182D0D91C943525678B /* Pods-WordPadTests-umbrella.h */,
+				668832457DEC712B220BAE453603A12D /* Pods-WordPadTests.debug.xcconfig */,
+				A72F367D1E3423FE91425229A31FFCC0 /* Pods-WordPadTests.release.xcconfig */,
+			);
+			name = "Pods-WordPadTests";
+			path = "Target Support Files/Pods-WordPadTests";
+			sourceTree = "<group>";
+		};
+		52B9BCE681F89AA4E34AEB66C7CB5E99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2162C93BFC5963F256BEF84E97AC1A1B /* Pods_WordPad.framework */,
+				315F6966D9BB0620413976E96AAC6E10 /* Pods_WordPadTests.framework */,
+				7590EB637172B8B9BA8CFAE5443B0B88 /* Pods_WordPadUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				52B9BCE681F89AA4E34AEB66C7CB5E99 /* Products */,
+				E7F258FAD1F96DEF632C3E7A2DB559C1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A3CC0E78D28E0DE1D2A4CCE1F3FFF276 /* Pods-WordPad */ = {
+			isa = PBXGroup;
+			children = (
+				DF5335F304FF2B01E76F5C001B8FFDFF /* Pods-WordPad.modulemap */,
+				A0BD5398BE2E56C50409FE14D8B49270 /* Pods-WordPad-acknowledgements.markdown */,
+				4CF5BB0744AAA2C259778C492DFE7FA3 /* Pods-WordPad-acknowledgements.plist */,
+				C8B5E86A64BE9CC9BF1C061A8653A48C /* Pods-WordPad-dummy.m */,
+				B3C8F6F6A200D910A802134387FA3530 /* Pods-WordPad-Info.plist */,
+				E5BF91DCDC8B066D4FDB565015FC02E7 /* Pods-WordPad-umbrella.h */,
+				DCB96A9AD2657EECDBFB11BCEE6323F2 /* Pods-WordPad.debug.xcconfig */,
+				332BAC7F7101F5CC6A4B3CA248C30C6D /* Pods-WordPad.release.xcconfig */,
+			);
+			name = "Pods-WordPad";
+			path = "Target Support Files/Pods-WordPad";
+			sourceTree = "<group>";
+		};
+		A695617E4624F5DD5216C21CFA076C0C /* Pods-WordPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EEE39224B4ACCBD6FB28502206D3676 /* Pods-WordPadUITests.modulemap */,
+				21CA4066D4CB7B912B679A0327FFFB39 /* Pods-WordPadUITests-acknowledgements.markdown */,
+				52A8CC308E6B5CA7E621712AA74032A4 /* Pods-WordPadUITests-acknowledgements.plist */,
+				997264226283A13A8CE3C4B7FFAD842B /* Pods-WordPadUITests-dummy.m */,
+				917682A847AAC4DB0620FE8AC406D4DD /* Pods-WordPadUITests-Info.plist */,
+				F5B7F39399B54518E1A49219CB99D68C /* Pods-WordPadUITests-umbrella.h */,
+				54A7BE1497F4FBF1368809CA0B7D9931 /* Pods-WordPadUITests.debug.xcconfig */,
+				3DCCC7003C0CB24BA457725779B28979 /* Pods-WordPadUITests.release.xcconfig */,
+			);
+			name = "Pods-WordPadUITests";
+			path = "Target Support Files/Pods-WordPadUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7F258FAD1F96DEF632C3E7A2DB559C1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC0E78D28E0DE1D2A4CCE1F3FFF276 /* Pods-WordPad */,
+				30EBB9C11DC549AB3A766536E9D4BF09 /* Pods-WordPadTests */,
+				A695617E4624F5DD5216C21CFA076C0C /* Pods-WordPadUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06B4D224E45970BB9797175942632EAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C284D4A99F791AAAF30858F410FB5B29 /* Pods-WordPadTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C799DFED1F237263F235D418999EB32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1479DA6D7EEB8D39F64F1D3CA2CDA1 /* Pods-WordPad-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F3AB5A9FE8377ED594BF0FD933A1C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E3F346451533E5A1C1F9C65C089016 /* Pods-WordPadUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19A3E750271D20E4E80EC52041F3B457 /* Pods-WordPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B707D7373BD56E1FDAC05BB508210D6A /* Build configuration list for PBXNativeTarget "Pods-WordPadTests" */;
+			buildPhases = (
+				06B4D224E45970BB9797175942632EAA /* Headers */,
+				089D71D0BE7C045BC73ED08BFA1F33F7 /* Sources */,
+				7F1B5E20776A5817BFCC1D8ECBAAD783 /* Frameworks */,
+				86B625DF1EF053A2B59EA2D5A2C39EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A95553F1AED5A5E93F08947382F3995 /* PBXTargetDependency */,
+			);
+			name = "Pods-WordPadTests";
+			productName = "Pods-WordPadTests";
+			productReference = 315F6966D9BB0620413976E96AAC6E10 /* Pods_WordPadTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C8E9D5B62A9405EC7CAD1D83BECB246 /* Pods-WordPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6906E600CB2CEB9F6BA4863B19524138 /* Build configuration list for PBXNativeTarget "Pods-WordPad" */;
+			buildPhases = (
+				4C799DFED1F237263F235D418999EB32 /* Headers */,
+				28362A47E1857293AF779E5D7F2246EC /* Sources */,
+				2EDD4C40A8502E99D653F79F38B63A2B /* Frameworks */,
+				FC38E884A1205D26492EB61B364CBEAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WordPad";
+			productName = "Pods-WordPad";
+			productReference = 2162C93BFC5963F256BEF84E97AC1A1B /* Pods_WordPad.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFB73F43056123082AEA8D19BE61B960 /* Pods-WordPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA3AF3AC73A84E47B3B89A2340F55A5 /* Build configuration list for PBXNativeTarget "Pods-WordPadUITests" */;
+			buildPhases = (
+				68F3AB5A9FE8377ED594BF0FD933A1C8 /* Headers */,
+				2A4F715215D7270B0E2FC8ACAFF67373 /* Sources */,
+				F641CF89AFEB07C8DC3720AD740B9BC4 /* Frameworks */,
+				26FDD60957006FA8A83BA6FB6321C45A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				273DDA83B3E82441B5CA091966ABE1DF /* PBXTargetDependency */,
+			);
+			name = "Pods-WordPadUITests";
+			productName = "Pods-WordPadUITests";
+			productReference = 7590EB637172B8B9BA8CFAE5443B0B88 /* Pods_WordPadUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 52B9BCE681F89AA4E34AEB66C7CB5E99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C8E9D5B62A9405EC7CAD1D83BECB246 /* Pods-WordPad */,
+				19A3E750271D20E4E80EC52041F3B457 /* Pods-WordPadTests */,
+				FFB73F43056123082AEA8D19BE61B960 /* Pods-WordPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26FDD60957006FA8A83BA6FB6321C45A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B625DF1EF053A2B59EA2D5A2C39EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC38E884A1205D26492EB61B364CBEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		089D71D0BE7C045BC73ED08BFA1F33F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD5924283EE0D62B9FCC8F0CFA28552 /* Pods-WordPadTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28362A47E1857293AF779E5D7F2246EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEF036E6A0F0A8063E3CCB2C53B2E50 /* Pods-WordPad-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A4F715215D7270B0E2FC8ACAFF67373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AA6803E5CBF84F21D98B7BEBE31588 /* Pods-WordPadUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273DDA83B3E82441B5CA091966ABE1DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WordPad";
+			target = 2C8E9D5B62A9405EC7CAD1D83BECB246 /* Pods-WordPad */;
+			targetProxy = 8FA16ED58E7B41F10E7D50A647FF03C3 /* PBXContainerItemProxy */;
+		};
+		7A95553F1AED5A5E93F08947382F3995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WordPad";
+			target = 2C8E9D5B62A9405EC7CAD1D83BECB246 /* Pods-WordPad */;
+			targetProxy = D27FF365BBAEEE0FD1063D57ABEA0A1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BB0620FA09D55DFA038A9F8F437D13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A7BE1497F4FBF1368809CA0B7D9931 /* Pods-WordPadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordPadUITests/Pods-WordPadUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordPadUITests/Pods-WordPadUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		231FE18CA1C2171A1EC39BF996338F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72F367D1E3423FE91425229A31FFCC0 /* Pods-WordPadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordPadTests/Pods-WordPadTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordPadTests/Pods-WordPadTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60B93374E5B7DB8246951F856A2BC0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668832457DEC712B220BAE453603A12D /* Pods-WordPadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordPadTests/Pods-WordPadTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordPadTests/Pods-WordPadTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7424C0B4D06C010E51721F19A90F1D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 332BAC7F7101F5CC6A4B3CA248C30C6D /* Pods-WordPad.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordPad/Pods-WordPad-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordPad/Pods-WordPad.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		844701EEA52057C9691BB0257A7A0C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCCC7003C0CB24BA457725779B28979 /* Pods-WordPadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordPadUITests/Pods-WordPadUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordPadUITests/Pods-WordPadUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CAAD1F9FA71E1302B05D99F8FFB373F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EA900D210B5055754946839E306FA201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB96A9AD2657EECDBFB11BCEE6323F2 /* Pods-WordPad.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordPad/Pods-WordPad-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordPad/Pods-WordPad.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFF583FA7420DC0AD49940362019A032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF583FA7420DC0AD49940362019A032 /* Debug */,
+				8CAAD1F9FA71E1302B05D99F8FFB373F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6906E600CB2CEB9F6BA4863B19524138 /* Build configuration list for PBXNativeTarget "Pods-WordPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA900D210B5055754946839E306FA201 /* Debug */,
+				7424C0B4D06C010E51721F19A90F1D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B707D7373BD56E1FDAC05BB508210D6A /* Build configuration list for PBXNativeTarget "Pods-WordPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B93374E5B7DB8246951F856A2BC0CC /* Debug */,
+				231FE18CA1C2171A1EC39BF996338F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA3AF3AC73A84E47B3B89A2340F55A5 /* Build configuration list for PBXNativeTarget "Pods-WordPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BB0620FA09D55DFA038A9F8F437D13D /* Debug */,
+				844701EEA52057C9691BB0257A7A0C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

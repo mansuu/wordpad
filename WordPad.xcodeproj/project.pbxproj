@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1984154541A5AC220401EFC6 /* Pods_WordPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA253E606E54E7EDE8F94493 /* Pods_WordPad.framework */; };
+		7F5F031DF055D7FA409B24B9 /* Pods_WordPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA3ABE15C8D7D509F1F9D2C /* Pods_WordPadUITests.framework */; };
+		A350A0D0231556B500F3279F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350A0CF231556B500F3279F /* AppDelegate.swift */; };
+		A350A0D2231556B500F3279F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350A0D1231556B500F3279F /* ViewController.swift */; };
+		A350A0D5231556B500F3279F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A350A0D3231556B500F3279F /* Main.storyboard */; };
+		A350A0D8231556B500F3279F /* WordPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A350A0D6231556B500F3279F /* WordPad.xcdatamodeld */; };
+		A350A0DA231556B600F3279F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A350A0D9231556B600F3279F /* Assets.xcassets */; };
+		A350A0DD231556B600F3279F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A350A0DB231556B600F3279F /* LaunchScreen.storyboard */; };
+		A350A0E8231556B600F3279F /* WordPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350A0E7231556B600F3279F /* WordPadTests.swift */; };
+		A350A0F3231556B600F3279F /* WordPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350A0F2231556B600F3279F /* WordPadUITests.swift */; };
+		A353A07E23158AD5008A2461 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A07D23158AD5008A2461 /* UIViewController.swift */; };
+		A353A08123159C82008A2461 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A08023159C82008A2461 /* DropDown.swift */; };
+		A353A08323159F48008A2461 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A08223159F48008A2461 /* DropDownView.swift */; };
+		A353A0852315ABB4008A2461 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353A0842315ABB4008A2461 /* Protocols.swift */; };
+		E63117D253954F285D5B4515 /* Pods_WordPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3259F2451EE8099189A86587 /* Pods_WordPadTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A350A0E4231556B600F3279F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A350A0C4231556B500F3279F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A350A0CB231556B500F3279F;
+			remoteInfo = WordPad;
+		};
+		A350A0EF231556B600F3279F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A350A0C4231556B500F3279F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A350A0CB231556B500F3279F;
+			remoteInfo = WordPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03332D4795120CB9CE72B529 /* Pods-WordPadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPadTests.debug.xcconfig"; path = "Target Support Files/Pods-WordPadTests/Pods-WordPadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3259F2451EE8099189A86587 /* Pods_WordPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6E3C97A68DA2FF0571FC37 /* Pods-WordPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPadUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordPadUITests/Pods-WordPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CFA9A8CAF32890F40826554 /* Pods-WordPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPad.release.xcconfig"; path = "Target Support Files/Pods-WordPad/Pods-WordPad.release.xcconfig"; sourceTree = "<group>"; };
+		56A2D2B48D801953BE357DAF /* Pods-WordPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPadUITests.release.xcconfig"; path = "Target Support Files/Pods-WordPadUITests/Pods-WordPadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DC2493FB27802241E37CA60 /* Pods-WordPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPadTests.release.xcconfig"; path = "Target Support Files/Pods-WordPadTests/Pods-WordPadTests.release.xcconfig"; sourceTree = "<group>"; };
+		A350A0CC231556B500F3279F /* WordPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A350A0CF231556B500F3279F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A350A0D1231556B500F3279F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A350A0D4231556B500F3279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A350A0D7231556B500F3279F /* WordPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordPad.xcdatamodel; sourceTree = "<group>"; };
+		A350A0D9231556B600F3279F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A350A0DC231556B600F3279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A350A0DE231556B600F3279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A350A0E3231556B600F3279F /* WordPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A350A0E7231556B600F3279F /* WordPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPadTests.swift; sourceTree = "<group>"; };
+		A350A0E9231556B600F3279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A350A0EE231556B600F3279F /* WordPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A350A0F2231556B600F3279F /* WordPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPadUITests.swift; sourceTree = "<group>"; };
+		A350A0F4231556B600F3279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A353A07D23158AD5008A2461 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		A353A08023159C82008A2461 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		A353A08223159F48008A2461 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		A353A0842315ABB4008A2461 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		BB18E4BB77C6B363F10FB5EF /* Pods-WordPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPad.debug.xcconfig"; path = "Target Support Files/Pods-WordPad/Pods-WordPad.debug.xcconfig"; sourceTree = "<group>"; };
+		DA253E606E54E7EDE8F94493 /* Pods_WordPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA3ABE15C8D7D509F1F9D2C /* Pods_WordPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A350A0C9231556B500F3279F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1984154541A5AC220401EFC6 /* Pods_WordPad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A350A0E0231556B600F3279F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63117D253954F285D5B4515 /* Pods_WordPadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A350A0EB231556B600F3279F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5F031DF055D7FA409B24B9 /* Pods_WordPadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53AF22CFCB4FC117A67EBCC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA253E606E54E7EDE8F94493 /* Pods_WordPad.framework */,
+				3259F2451EE8099189A86587 /* Pods_WordPadTests.framework */,
+				DBA3ABE15C8D7D509F1F9D2C /* Pods_WordPadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CFC1BC6935B8AA3E3D8CC9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB18E4BB77C6B363F10FB5EF /* Pods-WordPad.debug.xcconfig */,
+				4CFA9A8CAF32890F40826554 /* Pods-WordPad.release.xcconfig */,
+				03332D4795120CB9CE72B529 /* Pods-WordPadTests.debug.xcconfig */,
+				7DC2493FB27802241E37CA60 /* Pods-WordPadTests.release.xcconfig */,
+				3F6E3C97A68DA2FF0571FC37 /* Pods-WordPadUITests.debug.xcconfig */,
+				56A2D2B48D801953BE357DAF /* Pods-WordPadUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A350A0C3231556B500F3279F = {
+			isa = PBXGroup;
+			children = (
+				A350A0CE231556B500F3279F /* WordPad */,
+				A350A0E6231556B600F3279F /* WordPadTests */,
+				A350A0F1231556B600F3279F /* WordPadUITests */,
+				A350A0CD231556B500F3279F /* Products */,
+				5CFC1BC6935B8AA3E3D8CC9D /* Pods */,
+				53AF22CFCB4FC117A67EBCC4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A350A0CD231556B500F3279F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A350A0CC231556B500F3279F /* WordPad.app */,
+				A350A0E3231556B600F3279F /* WordPadTests.xctest */,
+				A350A0EE231556B600F3279F /* WordPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A350A0CE231556B500F3279F /* WordPad */ = {
+			isa = PBXGroup;
+			children = (
+				A353A07F23159C69008A2461 /* Supporting Files */,
+				A353A07C23158A92008A2461 /* extension */,
+				A350A0CF231556B500F3279F /* AppDelegate.swift */,
+				A350A0D1231556B500F3279F /* ViewController.swift */,
+				A350A0D3231556B500F3279F /* Main.storyboard */,
+				A350A0D9231556B600F3279F /* Assets.xcassets */,
+				A350A0DB231556B600F3279F /* LaunchScreen.storyboard */,
+				A350A0DE231556B600F3279F /* Info.plist */,
+				A350A0D6231556B500F3279F /* WordPad.xcdatamodeld */,
+			);
+			path = WordPad;
+			sourceTree = "<group>";
+		};
+		A350A0E6231556B600F3279F /* WordPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				A350A0E7231556B600F3279F /* WordPadTests.swift */,
+				A350A0E9231556B600F3279F /* Info.plist */,
+			);
+			path = WordPadTests;
+			sourceTree = "<group>";
+		};
+		A350A0F1231556B600F3279F /* WordPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A350A0F2231556B600F3279F /* WordPadUITests.swift */,
+				A350A0F4231556B600F3279F /* Info.plist */,
+			);
+			path = WordPadUITests;
+			sourceTree = "<group>";
+		};
+		A353A07C23158A92008A2461 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				A353A07D23158AD5008A2461 /* UIViewController.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		A353A07F23159C69008A2461 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A353A08023159C82008A2461 /* DropDown.swift */,
+				A353A08223159F48008A2461 /* DropDownView.swift */,
+				A353A0842315ABB4008A2461 /* Protocols.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A350A0CB231556B500F3279F /* WordPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A350A0F7231556B600F3279F /* Build configuration list for PBXNativeTarget "WordPad" */;
+			buildPhases = (
+				8D7E5698A980860F840ABF3A /* [CP] Check Pods Manifest.lock */,
+				A350A0C8231556B500F3279F /* Sources */,
+				A350A0C9231556B500F3279F /* Frameworks */,
+				A350A0CA231556B500F3279F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordPad;
+			productName = WordPad;
+			productReference = A350A0CC231556B500F3279F /* WordPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A350A0E2231556B600F3279F /* WordPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A350A0FA231556B600F3279F /* Build configuration list for PBXNativeTarget "WordPadTests" */;
+			buildPhases = (
+				FCA235561E1E08964C5793F8 /* [CP] Check Pods Manifest.lock */,
+				A350A0DF231556B600F3279F /* Sources */,
+				A350A0E0231556B600F3279F /* Frameworks */,
+				A350A0E1231556B600F3279F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A350A0E5231556B600F3279F /* PBXTargetDependency */,
+			);
+			name = WordPadTests;
+			productName = WordPadTests;
+			productReference = A350A0E3231556B600F3279F /* WordPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A350A0ED231556B600F3279F /* WordPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A350A0FD231556B600F3279F /* Build configuration list for PBXNativeTarget "WordPadUITests" */;
+			buildPhases = (
+				D1D009182336B75B749253EB /* [CP] Check Pods Manifest.lock */,
+				A350A0EA231556B600F3279F /* Sources */,
+				A350A0EB231556B600F3279F /* Frameworks */,
+				A350A0EC231556B600F3279F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A350A0F0231556B600F3279F /* PBXTargetDependency */,
+			);
+			name = WordPadUITests;
+			productName = WordPadUITests;
+			productReference = A350A0EE231556B600F3279F /* WordPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A350A0C4231556B500F3279F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Himanshu;
+				TargetAttributes = {
+					A350A0CB231556B500F3279F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A350A0E2231556B600F3279F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A350A0CB231556B500F3279F;
+					};
+					A350A0ED231556B600F3279F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A350A0CB231556B500F3279F;
+					};
+				};
+			};
+			buildConfigurationList = A350A0C7231556B500F3279F /* Build configuration list for PBXProject "WordPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A350A0C3231556B500F3279F;
+			productRefGroup = A350A0CD231556B500F3279F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A350A0CB231556B500F3279F /* WordPad */,
+				A350A0E2231556B600F3279F /* WordPadTests */,
+				A350A0ED231556B600F3279F /* WordPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A350A0CA231556B500F3279F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A350A0DD231556B600F3279F /* LaunchScreen.storyboard in Resources */,
+				A350A0DA231556B600F3279F /* Assets.xcassets in Resources */,
+				A350A0D5231556B500F3279F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A350A0E1231556B600F3279F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A350A0EC231556B600F3279F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D7E5698A980860F840ABF3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1D009182336B75B749253EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordPadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA235561E1E08964C5793F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordPadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A350A0C8231556B500F3279F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A353A08123159C82008A2461 /* DropDown.swift in Sources */,
+				A350A0D2231556B500F3279F /* ViewController.swift in Sources */,
+				A353A0852315ABB4008A2461 /* Protocols.swift in Sources */,
+				A350A0D8231556B500F3279F /* WordPad.xcdatamodeld in Sources */,
+				A353A07E23158AD5008A2461 /* UIViewController.swift in Sources */,
+				A350A0D0231556B500F3279F /* AppDelegate.swift in Sources */,
+				A353A08323159F48008A2461 /* DropDownView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A350A0DF231556B600F3279F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A350A0E8231556B600F3279F /* WordPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A350A0EA231556B600F3279F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A350A0F3231556B600F3279F /* WordPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A350A0E5231556B600F3279F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A350A0CB231556B500F3279F /* WordPad */;
+			targetProxy = A350A0E4231556B600F3279F /* PBXContainerItemProxy */;
+		};
+		A350A0F0231556B600F3279F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A350A0CB231556B500F3279F /* WordPad */;
+			targetProxy = A350A0EF231556B600F3279F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A350A0D3231556B500F3279F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A350A0D4231556B500F3279F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A350A0DB231556B600F3279F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A350A0DC231556B600F3279F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A350A0F5231556B600F3279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A350A0F6231556B600F3279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A350A0F8231556B600F3279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB18E4BB77C6B363F10FB5EF /* Pods-WordPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indegene.assignment.WordPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A350A0F9231556B600F3279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFA9A8CAF32890F40826554 /* Pods-WordPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indegene.assignment.WordPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A350A0FB231556B600F3279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03332D4795120CB9CE72B529 /* Pods-WordPadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indegene.assignment.WordPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordPad.app/WordPad";
+			};
+			name = Debug;
+		};
+		A350A0FC231556B600F3279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC2493FB27802241E37CA60 /* Pods-WordPadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indegene.assignment.WordPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordPad.app/WordPad";
+			};
+			name = Release;
+		};
+		A350A0FE231556B600F3279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6E3C97A68DA2FF0571FC37 /* Pods-WordPadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indegene.assignment.WordPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordPad;
+			};
+			name = Debug;
+		};
+		A350A0FF231556B600F3279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A2D2B48D801953BE357DAF /* Pods-WordPadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indegene.assignment.WordPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WordPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A350A0C7231556B500F3279F /* Build configuration list for PBXProject "WordPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A350A0F5231556B600F3279F /* Debug */,
+				A350A0F6231556B600F3279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A350A0F7231556B600F3279F /* Build configuration list for PBXNativeTarget "WordPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A350A0F8231556B600F3279F /* Debug */,
+				A350A0F9231556B600F3279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A350A0FA231556B600F3279F /* Build configuration list for PBXNativeTarget "WordPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A350A0FB231556B600F3279F /* Debug */,
+				A350A0FC231556B600F3279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A350A0FD231556B600F3279F /* Build configuration list for PBXNativeTarget "WordPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A350A0FE231556B600F3279F /* Debug */,
+				A350A0FF231556B600F3279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A350A0D6231556B500F3279F /* WordPad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A350A0D7231556B500F3279F /* WordPad.xcdatamodel */,
+			);
+			currentVersion = A350A0D7231556B500F3279F /* WordPad.xcdatamodel */;
+			path = WordPad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A350A0C4231556B500F3279F /* Project object */;
+}
