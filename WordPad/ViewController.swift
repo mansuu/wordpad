@@ -28,9 +28,12 @@ class ViewController: UIViewController {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.backgroundColor = UIColor.clear
         textView.font = UIFont.systemFont(ofSize: 15)
-        textView.textColor = UIColor.darkGray
+        textView.textColor = UIColor.black
         textView.layer.borderWidth = 2
         textView.layer.borderColor = UIColor.lightGray.cgColor
+        textView.isScrollEnabled = true
+        textView.scrollRangeToVisible(NSMakeRange(0, 0))
+        textView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
         return textView
     }()
     var dropDown : DropDown = {
@@ -53,22 +56,31 @@ class ViewController: UIViewController {
         setupViews()
         addDoneButtonOnKeyboard()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //NotificationCenter.default.removeObserver(self)
+    }
     //Set up initial views
     func setupViews(){
         dropDown.informSuperController = self
+        poarentView.backgroundColor = UIColor.white
+        poarentView.addSubview(textBox)
+        textBox.topAnchor.constraint(equalTo: changFontStackView.bottomAnchor, constant: 12).isActive = true
+        textBox.leftAnchor.constraint(equalTo: poarentView.leftAnchor, constant: 12).isActive = true
+        textBox.rightAnchor.constraint(equalTo: poarentView.rightAnchor, constant: -12).isActive = true
+        textBox.bottomAnchor.constraint(equalTo: poarentView.bottomAnchor, constant : -(poarentView.bounds.height/2)).isActive = true
+        textBox.textContainer.size = textBox.bounds.size
         poarentView.addSubview(dropDown)
         dropDown.heightAnchor.constraint(equalToConstant: 30).isActive = true
         dropDown.topAnchor.constraint(equalTo: changFontStackView.topAnchor).isActive = true
         dropDown.leftAnchor.constraint(equalTo: poarentView.leftAnchor, constant: 8).isActive = true
         dropDown.rightAnchor.constraint(equalTo: changFontStackView.leftAnchor, constant: -4).isActive = true
         dropDown.bottomAnchor.constraint(lessThanOrEqualTo: changFontStackView.bottomAnchor).isActive = true
-        poarentView.backgroundColor = UIColor.white
-        poarentView.addSubview(textBox)
-        textBox.topAnchor.constraint(equalTo: changFontStackView.bottomAnchor, constant: 12).isActive = true
-        textBox.leftAnchor.constraint(equalTo: poarentView.leftAnchor, constant: 12).isActive = true
-        textBox.rightAnchor.constraint(equalTo: poarentView.rightAnchor, constant: -12).isActive = true
-        textBox.bottomAnchor.constraint(equalTo: poarentView.bottomAnchor, constant : -4).isActive = true
         btnItalic.titleLabel?.font = UIFont.italicSystemFont(ofSize: 14)
         btnItalic.imageView?.image = UIImage.init(named: "radio_unselected")?.withRenderingMode(.alwaysTemplate)
         btnItalic.tintColor = UIColor.darkGray
@@ -82,6 +94,7 @@ class ViewController: UIViewController {
         insertImageButton.widthAnchor.constraint(equalToConstant: 32).isActive = true
         insertImageButton.heightAnchor.constraint(equalToConstant: 32).isActive = true
         insertImageButton.addTarget(self, action: #selector(insertImage), for: .touchUpInside)
+        textBox.delegate = self
     }
     
     //MARK : - OPENS LIBRARY TO BROWSE PHOTOS
@@ -94,9 +107,7 @@ class ViewController: UIViewController {
             present(imagePicker, animated: true, completion: nil)
         }
     }
-    @objc func chooseFont(){
-        
-    }
+
     
     //MARK :- Bold Radio Button clicked
     @IBAction func makeTextBold(_ sender: Any) {
@@ -105,7 +116,6 @@ class ViewController: UIViewController {
         if isBoldSelected{
             btnBold.setImage(UIImage.init(named: "radio_selected")?.withRenderingMode(.alwaysTemplate
                 ), for: .normal)
-            
         }
         else{
             btnBold.setImage(UIImage.init(named: "radio_unselected")?.withRenderingMode(.alwaysTemplate), for: .normal)
@@ -135,7 +145,6 @@ class ViewController: UIViewController {
     func changeFont(){
         if isBoldSelected{
             btnItalic.setImage(UIImage.init(named: "radio_unselected")?.withRenderingMode(.alwaysTemplate), for: .normal)
-            
             textBox.font = UIFont.boldSystemFont(ofSize: 15)
         }
         else if isItalicSelected{
@@ -147,14 +156,11 @@ class ViewController: UIViewController {
     func addDoneButtonOnKeyboard(){
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
         doneToolbar.barStyle = .default
-        
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
-        
         let items = [flexSpace, done]
         doneToolbar.items = items
         doneToolbar.sizeToFit()
-        
         textBox.inputAccessoryView = doneToolbar
     }
     
@@ -163,6 +169,37 @@ class ViewController: UIViewController {
         textBox.resignFirstResponder()
     }
     
+    // MARK : - Returns Attributed string of text view text
+    func getAttributedText(completionHandler : (NSMutableAttributedString)->()){
+        
+        var enteredString = NSMutableAttributedString(attributedString: textBox.attributedText)
+        var length = 0
+        if enteredString.length > 0{
+            length = 1
+        }
+        else{
+            completionHandler(enteredString)
+        }
+        textBox.attributedText.enumerateAttributes(in: NSRange(location: 0, length: length), options: .longestEffectiveRangeNotRequired) { (attributes, range, stop) in
+            enteredString = NSMutableAttributedString(attributedString: textBox.attributedText)
+            enteredString.addAttributes(attributes, range: range)
+            completionHandler(enteredString)
+        }
+    }
+    
+    
+    //MARK :- Insert Image in Text
+    func attchImageToText(withImage : UIImage){
+        getAttributedText(){ enteredString in
+            let imageAttachment = NSTextAttachment()
+            imageAttachment.bounds = CGRect.init(x: 0, y: 0, width: 48, height: 48)
+            imageAttachment.image = withImage
+            //MAKE NS ATTRIBUTED STRING
+            let imageString = NSAttributedString(attachment: imageAttachment)
+            enteredString.append(imageString)
+            textBox.attributedText = enteredString
+        }
+    }
 }
 
 extension  ViewController : UINavigationControllerDelegate, UIImagePickerControllerDelegate{
@@ -170,18 +207,7 @@ extension  ViewController : UINavigationControllerDelegate, UIImagePickerControl
         //GET SELECTED IMAGE HERE
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             // GOT THE IMAGE HERE INSERT IN TO TEXT BOX
-            let font = UIFont.systemFont(ofSize: 15)
-            let attributes = [NSAttributedString.Key.font:font]
-            let enteredString = NSMutableAttributedString(string: textBox.text! + " ", attributes: attributes)
-            let imageAttachment = NSTextAttachment()
-            imageAttachment.bounds = CGRect.init(x: 0, y: 0, width: 32, height: 32)
-            imageAttachment.image = pickedImage
-            //MAKE NS ATTRIBUTED STRING
-            
-            let imageString = NSAttributedString(attachment: imageAttachment)
-            enteredString.append(imageString)
-            
-            textBox.attributedText = enteredString
+            attchImageToText(withImage: pickedImage)
             dismiss(animated: true, completion: nil)
         }
         
@@ -191,7 +217,6 @@ extension  ViewController : UINavigationControllerDelegate, UIImagePickerControl
         dismiss(animated: true, completion: nil)
     }
 }
-
 
 
 extension ViewController : InformSuperController{
@@ -204,10 +229,17 @@ extension ViewController : InformSuperController{
             textBox.isUserInteractionEnabled = true
         default:
             //here font is coming but the parameter name is action, little confusing though
+            dropDown.titleLabel?.text = action
             textBox.font = UIFont.init(name: action, size: 15)
             textBox.isUserInteractionEnabled = true
         }
     }
-    
-    
+}
+
+extension ViewController : UITextViewDelegate{
+    func textViewDidChange(_ textView: UITextView) {
+        getAttributedText(){ attributedText in
+            textView.attributedText = attributedText
+        }
+    }
 }

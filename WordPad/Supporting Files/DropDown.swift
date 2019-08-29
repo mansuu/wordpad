@@ -18,6 +18,7 @@ class DropDown : UIButton{
         dropDownView = DropDownView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
         dropDownView.translatesAutoresizingMaskIntoConstraints = false
         dropDownView.dropDownOptionSelectionListener = self
+        height.priority = UILayoutPriority(rawValue: 999)
     }
     override func didMoveToSuperview() {
         self.superview?.addSubview(dropDownView)

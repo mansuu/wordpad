@@ -14,6 +14,11 @@ class DropDownView : UIView, UITableViewDelegate, UITableViewDataSource{
     weak var dropDownOptionSelectionListener : DropDownOptionSelectionListener?
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = UIColor.black
+        self.isOpaque = false
+        self.alpha = 1
+        tableView.backgroundColor = UIColor.black
+        tableView.alpha = 1
         tableView.delegate = self
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -36,6 +41,7 @@ class DropDownView : UIView, UITableViewDelegate, UITableViewDataSource{
         cell.textLabel?.text = options[indexPath.row]
         cell.backgroundColor = UIColor.darkGray
         cell.textLabel?.textColor = UIColor.white
+        cell.selectionStyle = .none
         return cell
     }
     
