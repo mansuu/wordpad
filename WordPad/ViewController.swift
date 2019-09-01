@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         dropDown.setTitle("Fonts", for: .normal)
         dropDown.backgroundColor = UIColor.darkGray
         dropDown.titleLabel?.textColor = UIColor.white
+        dropDown.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 1000), for: .horizontal)
+        dropDown.clipsToBounds = true
         dropDown.dropDownView.options = ["Ariel", "Helvetica", "Courier", "Verdana"]
         return dropDown
     }()
@@ -221,10 +223,12 @@ extension ViewController : InformSuperController{
             textBox.isUserInteractionEnabled = true
         default:
             //here font is coming but the parameter name is action, little confusing though
-            dropDown.titleLabel?.text = action
+            //dropDown.titleLabel?.text = action
+            dropDown.setTitle(action, for: .normal)
             textBox.font = UIFont.init(name: action, size: 15)
             textBox.isUserInteractionEnabled = true
         }
+        
     }
 }
 
